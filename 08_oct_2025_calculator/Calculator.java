@@ -19,7 +19,7 @@ class Calculator {
         System.out.println("Your result is: " + result);
     }
 
-    double calculate() {
+    final double calculate() {
         // checks which operator is used, converts strings to ints and returns the solution of requested equation.
         if (eqString.contains("+")) {
             operation = '+';
@@ -44,7 +44,7 @@ class Calculator {
     }
     
     // Converts strings to ints
-    void string_to_double() {
+    final void string_to_double() {
         // loop to iterate over each character
         for(int i = 0; i < eqString.length(); i++) {
             // if the char is a digit then store the digit else if
